@@ -47,6 +47,11 @@ class Menu {
   }
 
   appendMetadata(data) {
+    this.$element.append(
+      $('<h2 id="week">').text(
+        `vecka ${data.week}`
+      )
+    );
   }
 }
 
